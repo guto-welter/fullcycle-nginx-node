@@ -1,1 +1,1 @@
-# fullcycle-nginx-node
+docker-compose up -d
