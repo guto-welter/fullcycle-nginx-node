@@ -1,2 +1,2 @@
-node_modules
-pachage-lock.json
+/app/node_modules
+/app/pachage-lock.json
