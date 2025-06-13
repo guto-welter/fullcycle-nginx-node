@@ -14,13 +14,13 @@ services:
       - node-network
 
   node:
-    build: ./node
-    container_name: node
+    build: app
+    container_name: app
     restart: always
     volumes:
-      - ./node:/usr/src/app
+      - ./app:/usr/src/app
     working_dir: /usr/src/app
-    command: sh -c "npm install && node index.js"
+    command: sh -c "npm install && app index.js"
     depends_on:
       - mysql
     networks:
