@@ -16,6 +16,7 @@ services:
   app:
     build: app
     container_name: app
+    entrypoint: dockerize -wait tcp://mysql:3306 -timeout 30s docker-entrypoint.sh
     restart: always
     volumes:
       - ./app:/usr/src/app
